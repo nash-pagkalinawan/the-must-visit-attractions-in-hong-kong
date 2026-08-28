@@ -51,6 +51,64 @@
                 <td>November to December (Cool & Dry Weather)</td>
             </tr>
         </table>
+
+<section id="suggest-a-place">
+  <h2>Suggest a Place</h2>
+  
+  <form action="#" method="POST">
+    
+    <!-- 1. Place name (required text input) -->
+    <div>
+      <label for="place_name">Place Name:</label>
+      <input type="text" id="place_name" name="place_name" required placeholder="Enter place name">
+    </div>
+
+    <!-- 2. Category (radio buttons inside fieldset with legend, sharing one name) -->
+    <fieldset>
+      <legend>Category</legend>
+      
+      <label>
+        <input type="radio" name="category" value="food" checked> Food Spot
+      </label><br>
+      
+      <label>
+        <input type="radio" name="category" value="study"> Study Spot
+      </label><br>
+      
+      <label>
+        <input type="radio" name="category" value="outdoors"> Outdoors / Nature
+      </label>
+    </fieldset>
+
+    <!-- 3. What's good about it (checkboxes, sharing one name) -->
+    <div>
+      <p>What's good about it?</p>
+      
+      <label>
+        <input type="checkbox" name="highlights" value="affordable"> Affordable
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="highlights" value="good_wifi"> Good Wi-Fi
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="highlights" value="quiet"> Quiet Environment
+      </label>
+    </div>
+
+    <!-- 4. Contact email (required email input) -->
+    <div>
+      <label for="email">Your Contact Email:</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Suggestion</button>
+
+  </form>
+</section>
+
     </main>
 
 <footer>
