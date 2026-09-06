@@ -1,27 +1,35 @@
-/* 1. VARIABLES */
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
 :root {
-  --brand-color: #a70c26;
+  --brand-color: rgb(155, 22, 5);
   --dark-ink: #1a1a1a;
   --muted-grey: #6c757d;
   --light-bg: #f8f9fa;
 }
 
-/* 2. BASE STYLES */
+/* ==========================================================================
+   2. BASE STYLES
+   ========================================================================== */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
-  color: var(--dark-ink);
-  background-color: var(--light-bg);
+  color: var(--muted);
+  background-color: rgb(243, 237, 238);
   margin: 0;
   padding: 0;
 }
 
-/* 3. LAYOUT REGIONS */
-header, main, footer {
+/* ==========================================================================
+   3. LAYOUT REGIONS
+   ========================================================================== */
+header {
+  background-color: #690707;
+  border-bottom: 1px solid var(--muted-grey);
   padding: 1rem;
 }
 
@@ -33,26 +41,71 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 nav a {
+  color: rgb(255, 159, 135);
   text-decoration: none;
-  color: var(--brand-color);
-  font-weight: bold;
+ font-family: "LINE Seed JP", sans-serif;
+ font-size: 15px;
 }
 
-/* 4. COMPONENTS (Place Cards) */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  border-top: 1px solid var(--muted-grey);
+  color: var(--light-bg);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color:#690707;
+}
+
+/* ==========================================================================
+   4. COMPONENTS
+   ========================================================================== */
 .product-card {
   background-color: #ffffff;
+  border: 1px solid var(--muted-grey);
   border-radius: 8px;
-  padding: 16px;
-  border-left: 5px solid var(--brand-color);
-  margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .product-card h3 {
-  font-size: 1.25rem;
   color: var(--brand-color);
   margin-top: 0;
 }
+.line-seed-jp-regular {
+  font-family: "LINE Seed JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+font-family: "LINE Seed JP", sans-serif;
+color:#f8f9fa;
+}
+
+.tagline {
+  color: white;
+  font-size: 14px;
+}
+
+.centered-nav
+{
+  text-align: center;
+  font-size:30;
+}
+
+.centered-nav a
+{
+ margin: 0 15px;
+}
+
+
