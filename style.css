@@ -69,16 +69,26 @@ footer {
 /* ==========================================================================
    4. COMPONENTS
    ========================================================================== */
-.product-card {
-  background-color: #ffffff;
-  border: 1px solid var(--muted-grey);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+.place-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.product-card h3 {
-  color: var(--brand-color);
+.place-card {
+  background-color: #ffffff;            
+  border-radius: 8px;                    
+  padding: 16px;                         
+  border-left: 5px solid var(--brand-color); 
+  border: 1px solid var(--muted-grey);
+  margin-bottom: 20px;
+  flex: 1 1 240px;                       
+}
+
+.place-card h3, 
+.place-card h2 {
+  font-size: 1.5rem;
+  color: black;
   margin-top: 0;
 }
 .line-seed-jp-regular {
@@ -105,30 +115,12 @@ color:#f8f9fa;
 .centered-nav
 {
   text-align: center;
-  font-size:30;
+  font-size:30px;
 }
 
 .centered-nav a
 {
  margin: 0 15px;
-}
-
-
-/* Styling para sa Place Cards */
-.place-card {
-  background-color: #ffffff;             
-  border-radius: 8px;                    
-  padding: 16px;                         
-  border-left: 5px solid var(--brand-color); 
-  margin-bottom: 20px;                   
-}
-
-/* 5. Distinct font-size and color sa place name */
-.place-card h3, 
-.place-card h2 {
-  font-size: 1.5rem;
-  color: black;
-  margin-top: 0;
 }
 
 .title
@@ -184,6 +176,10 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-
+.place-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 
