@@ -76,13 +76,19 @@ footer {
 }
 
 .place-card {
+  flex: 1 1 240px;           
   background-color: #ffffff;            
   border-radius: 8px;                    
   padding: 16px;                         
-  border-left: 5px solid var(--brand-color); 
   border: 1px solid var(--muted-grey);
-  margin-bottom: 20px;
-  flex: 1 1 240px;                       
+  border-left: 5px solid var(--brand-color); 
+  margin-bottom: 20px;                 
+}
+
+.place-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .place-card h3, 
@@ -91,6 +97,7 @@ footer {
   color: black;
   margin-top: 0;
 }
+
 .line-seed-jp-regular {
   font-family: "LINE Seed JP", sans-serif;
   font-weight: 400;
