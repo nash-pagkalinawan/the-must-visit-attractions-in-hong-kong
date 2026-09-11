@@ -27,21 +27,21 @@ body {
 /* ==========================================================================
    3. LAYOUT REGIONS
    ========================================================================== */
-header {
-  background-color: #690707;
+.site-header {
+  background-color: #690707; /* O ang kulay na gusto mo para sa header */
   border-bottom: 1px solid var(--muted-grey);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
   list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
+  padding: 0;
 }
 
 nav a {
@@ -93,8 +93,13 @@ color:#f8f9fa;
 }
 
 .tagline {
-  color: white;
-  font-size: 14px;
+  color: rgb(70, 0, 0);
+  font-size: 16px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 200px;         
+  text-align: center;
 }
 
 .centered-nav
@@ -178,3 +183,7 @@ textarea:focus {
   outline: 3px solid var(--brand-color);
   outline-offset: 2px;
 }
+
+
+
+
