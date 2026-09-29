@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-area: masthead;
 }
 
 .site-header nav ul {
@@ -55,6 +56,7 @@ main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
+  grid-area: main;
 }
 
 footer {
@@ -64,6 +66,7 @@ footer {
   padding: 1.5rem;
   margin-top: 2rem;
   background-color:#690707;
+  grid-area: foot;
 }
 
 /* ==========================================================================
@@ -189,4 +192,15 @@ textarea:focus {
   border-radius: 10px;
 }
 
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot";
+  gap: 16px;
+}
+
+aside  { grid-area: side; }
 
