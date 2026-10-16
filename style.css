@@ -212,5 +212,6 @@ textarea:focus {
   }
 }
 
-aside  { grid-area: side; }
+aside  { grid-area: side; 
+background-color:rgb(255, 170, 131);}
 
